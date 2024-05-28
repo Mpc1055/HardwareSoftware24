@@ -1,15 +1,18 @@
-/* Summer Robotics Camp Code 1 "Blink"
+/* Summer Robotics Camp Code module 1a "Blink"
     Written by Michael Caiozzo 
 */
 // Variable Declarations
 
-int Led = 13;
-void setup() {
-  // put your setup code here, to run once:
+int led = 13;
 
+void setup() {
+  pinMode(led, OUTPUT);
+  
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  digitalWrite(led, HIGH);  // Turn led on
+  delay(500);               // delay 500 miliseconds(1/2 second)
+  digitalWrite(led, LOW);   // Turn led off 
+  delay(500);               // delay 500 miliseconds(1/2 second)
 }
